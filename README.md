@@ -50,19 +50,22 @@ Follow these steps to set up the project environment:
 
 1. **Clone the Repository**
    ```bash
-   git clone [https://github.com/yourusername/study-habit-recommendation.git](https://github.com/yourusername/study-habit-recommendation.git)
+   git clone https://github.com/kevnugget/Study-Habit-Recommendation-System.git
    cd study-habit-recommendation
    ```
 
 2. **Install Dependencies**
-   It is recommended to use a virtual environment.
+   Download dependencies and convert the notebook into a script.
    ```bash
    # Create and activate virtual environment
    python -m venv venv
    source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
-   # Install required packages
-   pip install pandas scikit-learn matplotlib
+   # Install dependencies including Jupyter
+   pip install pandas scikit-learn matplotlib jupyter
+   
+   # Convert the notebook to a runnable Python script
+   jupyter nbconvert --to script analysis.ipynb
    ```
 
 ## 🚀 Execution
@@ -73,7 +76,7 @@ Follow these steps to set up the project environment:
 2. **Run the Analysis**
    Execute the Python script to preprocess the data, generate clusters, and view the visualization:
    ```bash
-   python your_script_name.py
+   python analysis.py
    ```
 
 3. **Interpreting Output**
