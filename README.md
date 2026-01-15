@@ -10,7 +10,7 @@ The **Study Habit Recommendation System** is a machine learning pipeline designe
 * **Heuristic Struggle Scoring:** Features a custom weighted scoring algorithm to qualitatively label clusters based on efficiency and distraction metrics.
 
 ## Tech Stack
-* **Language:** Python 3.14
+* **Language:** Python 3.13.7
 * **Data Analysis:** Pandas, NumPy
 * **Machine Learning:** Scikit-learn (KMeans, KNeighborsClassifier, PCA, StandardScaler)
 * **Visualization:** Matplotlib
