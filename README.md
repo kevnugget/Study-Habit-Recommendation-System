@@ -1,21 +1,21 @@
 # Study Habit Recommendation System
 
-## 📌 Project Overview
+## Project Overview
 The **Study Habit Recommendation System** is a machine learning pipeline designed to analyze student demographics and study behaviors to provide personalized academic habit profiles. By combining **Unsupervised Clustering (K-Means)** with **Supervised Classification (K-Nearest Neighbors)**, the system identifies natural groupings in student data and enables the prediction of habit categories for new users.
 
-## 🚀 Key Features
+## Key Features
 * **Hybrid Machine Learning Pipeline:** Utilizes K-Means to discover student archetypes and KNN to classify future data points based on discovered clusters.
 * **Manual Ordinal Encoding:** Implements a custom encoding strategy to preserve the logical hierarchy of categorical features (e.g., Sleep Hours, Education Level).
 * **Dimensionality Reduction:** Leverages **Principal Component Analysis (PCA)** to compress 15+ features into a 2D plane for cluster visualization.
 * **Heuristic Struggle Scoring:** Features a custom weighted scoring algorithm to qualitatively label clusters based on efficiency and distraction metrics.
 
-## 🛠 Tech Stack
+## Tech Stack
 * **Language:** Python 3.14
 * **Data Analysis:** Pandas, NumPy
 * **Machine Learning:** Scikit-learn (KMeans, KNeighborsClassifier, PCA, StandardScaler)
 * **Visualization:** Matplotlib
 
-## 📊 Methodology
+## Methodology
 
 ### 1. Data Preprocessing & Feature Engineering
 Raw survey data is cleaned to remove metadata (Timestamps, Emails). To ensure distance-based algorithms function accurately, categorical data is transformed via **Manual Ordinal Encoding**. This ensures the mathematical distance between "Ineffective" and "Very Effective" is correctly represented.
@@ -39,12 +39,12 @@ Based on these scores, clusters are mapped to the following categories:
 * 🟡 **Moderate**
 * 🔴 **Struggling**
 
-## 📈 Visualization
+## Visualization
 The system utilizes **PCA** to visualize the multi-dimensional student data. The axes represent:
 * **Component 1:** Study Efficiency (Variance in sleep, focus methods, and habits)
 * **Component 2:** Distraction Level (Variance in extracurriculars and distraction frequency)
 
-## 📥 Installation
+## Installation
 
 Follow these steps to set up the project environment:
 
@@ -68,7 +68,7 @@ Follow these steps to set up the project environment:
    jupyter nbconvert --to script analysis.ipynb
    ```
 
-## 🚀 Execution
+## Execution
 
 1. **Prepare Your Data**
    Ensure you have a file named `responses.csv` in the root directory. The script expects specific categorical headers (Age, Education Level, Hours of Sleep, etc.).
